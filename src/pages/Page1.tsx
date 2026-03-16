@@ -6,9 +6,9 @@ export default function Page1() {
   const [result, setResult] = useState<string | null>(null);
 
   return (
-    <div>
-      <h1>Page 1</h1>
-      <button onClick={() => setIsOpen(true)}>Open Modal in Page1</button>
+    <div className="bg-green-300 rounded-md p-4">
+      <h1 className="m-2 text-center">This Page 1</h1>
+      <button className="bg-black text-white p-2 rounded-md cursor-pointer" onClick={() => setIsOpen(true)}>Open Modal in Page 1</button>
 
       <Modal
         isOpen={isOpen}
@@ -20,7 +20,7 @@ export default function Page1() {
         }}
       />
 
-      {result && <p>Result: {result}</p>}
+      {result && <p className="m-2 text-center">Result: {result}</p>}
     </div>
   );
 }
