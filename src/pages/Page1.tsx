@@ -1,14 +1,15 @@
 import React, { useState } from "react";
 import Modal from "../components/Modal";
+import Button from "@/components/Button";
 
 export default function Page1() {
   const [isOpen, setIsOpen] = useState(false);
   const [result, setResult] = useState<string | null>(null);
 
   return (
-    <div className="bg-green-300 rounded-md p-4">
-      <h1 className="m-2 text-center">This Page 1</h1>
-      <button className="bg-black text-white p-2 rounded-md cursor-pointer" onClick={() => setIsOpen(true)}>Open Modal in Page 1</button>
+    <div className="bg-blue-500 rounded-md p-4">
+      <h1 className="m-2 text-center text-white">This is Page 1</h1>
+      <Button onClick={() => setIsOpen(true)}>Open Modal in Page 1</Button>
 
       <Modal
         isOpen={isOpen}
@@ -20,7 +21,7 @@ export default function Page1() {
         }}
       />
 
-      {result && <p className="m-2 text-center">Result: {result}</p>}
+      {result && <p className="m-2 text-center text-white">Result: {result}</p>}
     </div>
   );
 }
