@@ -8,8 +8,8 @@ function App() {
         Generic Modal Component : Multiple pages can use the same modal
         component{" "}
       </p>
-         <p className="text-center bg-gray-500 text-white p-3">
-        Generic Button Component : Multiple pages can  use the same Button
+      <p className="text-center bg-gray-500 text-white p-3">
+        Generic Button Component : Multiple pages can use the same Button
         component{" "}
       </p>
       <div className=" bg-gray-300 min-h-screen flex flex-col items-center justify-evenly">

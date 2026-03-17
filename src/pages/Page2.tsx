@@ -9,7 +9,9 @@ export default function Page2() {
   return (
     <div className="bg-gray-500 rounded-md p-4">
       <h1 className="m-2 text-center text-white">This is Page 2</h1>
-      <Button onClick={() => setIsOpen(true)}>Open Modal in Page 2</Button>
+      <Button className="font-semibold" onClick={() => setIsOpen(true)}>
+        Open Modal in Page 2
+      </Button>
 
       <Modal
         isOpen={isOpen}
